@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title></title>
+
+</head>
+
+<body >
+
+	<script type="text/javascript">
+
+		// document.write("Hello I am JS");
+
+		//first way of wrinting obj
+
+		var studentList = [
+
+		{"SNo":1,"Name":"Pravash","Address":"Nuwakot","Phone":12345},
+
+
+		{"SNo":4,"Name":"Ram","Address":"Tustin","Phone":56782},
+
+		{"SNo":5,"Name":"Krishna","Address":"Irvine","Phone":73671265}
+
+		];
+
+		var myTable = "<table border='1'><tr><td>S.No</td><td>Name</td><td>Address</td><td>Phone</td></tr>";
+
+		
+
+
+
+		for (var i =0 ; i<studentList.length ;i++) 
+
+		{
+
+			myTable += "<tr><td>"+studentList[i].SNo+"</td><td>"+studentList[i].Name+"</td><td>"+studentList [i].Address+"</td><td>"+studentList [i].Phone+"</td></tr>";
+
+			
+
+		}
+
+		document.write(myTable);
+
+
+
+		/*
+
+		var my_table = "<table border='1'><tr><td>S.No</td><td>Name</td><td>Address</td><td>Phone</td></tr>";
+
+
+
+		for (var i = 0; i <studentList.length ; i++) 
+
+		{
+
+    	
+
+    	my_table +="<tr>";
+
+    	my_table +="<td>";
+
+    	my_table +=studentList[i].SNo;
+
+    	my_table +="</td>";
+
+    	my_table +="<td>";
+
+    	my_table +=studentList[i].Name;
+
+    	my_table +="</td>";
+
+    	my_table +="<td>";
+
+    	my_table +=studentList[i].Address;
+
+    	my_table +="</td>";
+
+    	my_table +="<td>";
+
+    	my_table +=studentList[i].Phone;
+
+    	my_table +="</td>";
+
+    	my_table +="</tr>";
+
+    	}
+
+    	document.write(my_table);*/
+
+	
+
+</script>
+
+</body>
+
+</html>
